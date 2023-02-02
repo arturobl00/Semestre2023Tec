@@ -1,0 +1,26 @@
+p {
+    color:black;
+}
+
+#rojo{
+    color: red;
+}
+
+#azul{
+    color: blue;
+}
+
+.negras{
+    font-weight: bold;
+}
+
+/*
+Propiedades de formmato para texto
+color puede ser nombre, hexadecimal o RGB
+background-color
+*/
+
+p.micolor{
+    color: #B408D3;
+    background-color: rgb(0, 255, 0);
+}
