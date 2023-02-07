@@ -27,14 +27,21 @@ class _Demo1State extends State<Demo1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Mi APP"),
-      ),
-      body: Container(
-        child: Text(
-          "Hola",
-          style: TextStyle(color: Colors.blue),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            color: Colors.red,
+            width: 245.9,
+            height: 243.3,
+          ),
+          Container(
+            color: Colors.blue,
+            width: 245.9,
+            height: 243.3,
+          ),
+        ],
       ),
     );
   }
