@@ -1,0 +1,39 @@
+#micolor{
+    background-color: rgb(63, 63, 230);
+    color: white;
+}
+
+#colorOpacity1{
+    background-color: chartreuse;
+    opacity: 0.1;
+}
+
+#colorOpacity5{
+    background-color: chartreuse;
+    opacity: 0.5;
+}
+
+#colorOpacity9{
+    background-color: chartreuse;
+    opacity: 0.9;
+}
+
+h1.dotted {border-style: dotted;}
+h1.dashed {border-style: dashed;}
+h1.solid {border-style: solid;}
+h1.double {border-style: double;}
+h1.groove {border-style: groove;}
+h1.ridge {border-style: ridge;}
+h1.inset {border-style: inset;}
+h1.outset {border-style: outset;}
+h1.none {border-style: none;}
+h1.hidden {border-style: hidden;}
+h1.mix {
+    border-style: dotted dashed 
+    solid double;
+}
+h1.mix1 {
+    border-style: none none 
+    solid none;
+}
+
