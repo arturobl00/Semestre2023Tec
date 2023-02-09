@@ -1,0 +1,72 @@
+h1.verticalrl {
+    writing-mode: vertical-rl;
+}
+
+.milr{
+    border: solid;
+    width: 200px;
+    writing-mode: vertical-lr;
+}
+
+.mirl{
+    border: solid;
+    width: 200px;
+    writing-mode: vertical-rl;
+}
+
+.box {
+    width: 150px;
+  }
+  
+  .horizontal {
+    writing-mode: horizontal-tb;
+  }
+  
+  .vertical {
+    writing-mode: vertical-rl;
+  }
+
+  .wrapper{
+    width: 800;
+  }
+
+  .box1{
+    border: solid;
+    inline-size: 400px;
+    writing-mode: horizontal-tb;
+  }
+
+  img{
+    float:inline-start;
+    width: 100px;
+    height: 100px;
+  }
+
+  table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+  }
+
+  thead th:nth-child(1){
+    width: 30%;
+  }
+
+  thead th:nth-child(2){
+    width: 20%;
+  }
+
+  thead th:nth-child(3){
+    width: 15%;
+  }
+
+  thead th:nth-child(4){
+    width: 35%;
+  }
+  
+  th, td{
+    padding: 20px;;
+  }
+  
+      

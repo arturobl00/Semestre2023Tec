@@ -37,3 +37,47 @@ h1.mix1 {
     solid none;
 }
 
+.mimargen{
+    border-style: solid;
+    background-color: cornflowerblue;
+    margin: 50px;
+}
+
+.mimargentop{
+    border-style: solid;
+    background-color: cornflowerblue;
+    margin-top: 100px;
+}
+
+.mimargenleft{
+    border-style: solid;
+    background-color: cornflowerblue;
+    margin-left: 100px;
+}
+
+.mimargenright{
+    border-style: solid;
+    background-color: cornflowerblue;
+    margin-right: 100px;
+}
+
+.mimargenbottom{
+    border-style: solid;
+    background-color: cornflowerblue;
+    margin-bottom: 100px;
+}
+
+.mipadding{
+    border-style: solid;
+    padding: 50px;
+}
+
+.midiv{
+    background-color:darkgray;
+    width: 400px;
+    border: solid black;
+    padding: 50px;
+    margin: 20px;
+    color: blue;
+}
+
