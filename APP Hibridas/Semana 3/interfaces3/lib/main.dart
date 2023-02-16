@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interfaces3/modules/myDrawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: MyDrawer());
+        home: const MyDrawer());
   }
 }
 
@@ -31,177 +32,10 @@ class _MyDrawerState extends State<MyDrawer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My APP Drawer"),
+        title: const Text("My APP Drawer"),
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Text("Hola mi APP"),
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text("Nosotros"),
-            ),
-            Container(
-              color: Colors.blue,
-              child: Text("Ustedes"),
-            ),
-            Container(
-              color: Colors.cyan,
-              child: Text("Ellos"),
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.deepOrange,
-                  child: const Text('Item 1')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.blueAccent,
-                  child: const Text('Item 2')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text("Nosotros"),
-            ),
-            Container(
-              color: Colors.blue,
-              child: Text("Ustedes"),
-            ),
-            Container(
-              color: Colors.cyan,
-              child: Text("Ellos"),
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.deepOrange,
-                  child: const Text('Item 1')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.blueAccent,
-                  child: const Text('Item 2')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text("Nosotros"),
-            ),
-            Container(
-              color: Colors.blue,
-              child: Text("Ustedes"),
-            ),
-            Container(
-              color: Colors.cyan,
-              child: Text("Ellos"),
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.deepOrange,
-                  child: const Text('Item 1')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.blueAccent,
-                  child: const Text('Item 2')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text("Nosotros"),
-            ),
-            Container(
-              color: Colors.blue,
-              child: Text("Ustedes"),
-            ),
-            Container(
-              color: Colors.cyan,
-              child: Text("Ellos"),
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.deepOrange,
-                  child: const Text('Item 1')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Container(
-                  height: 50,
-                  color: Colors.blueAccent,
-                  child: const Text('Item 2')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text("Nosotros"),
-            ),
-            Container(
-              color: Colors.blue,
-              child: Text("Ustedes"),
-            ),
-            Container(
-              color: Colors.cyan,
-              child: Text("Ellos"),
-            ),
-            ListTile(
-              title: Container(
-                  height: 50, color: Colors.green, child: const Text('Item 1')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Container(
-                  height: 50, color: Colors.green, child: const Text('Item 2')),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-          ],
-        ),
-      ),
-      body: MyContent(),
+      drawer: Drawer(child: MyDrawer1()),
+      body: const MyContent(),
     );
   }
 }
@@ -219,7 +53,7 @@ class _MyContentState extends State<MyContent> {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           Text("Cualquier Cosa"),
           Text("Mientras se me ocurre algo"),
           Text("y espero a que pase"),
