@@ -6,7 +6,7 @@ import numpy as np
 #numero consecutivo ejemplo si tengo 2 camaras el 0 sera la camara 1 y el 1 la camara 2
 cam = cv2.VideoCapture(1)
 
-#Validación de Camara
+#Validación de Camaaaara
 if not cam.isOpened():
     print("Cannot open camera")
     exit()

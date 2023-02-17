@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Integrar Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
     <title>Primer Ejemplo de Bootstrap</title>
 </head>
 <body>
@@ -161,6 +164,240 @@
               </div>
           </div>
       </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 bg-info">
+            <p>Espacio Pequeño</p>
+          </div>
+          <div class="col-8 bg-primary">
+            <p>Espacio Grande</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5 bg-info">
+            <p>Espacio de 5</p>
+          </div>
+          <div class="col-5 bg-danger">
+            <p>Espacio de 5</p>
+          </div>
+          <div class="col-2 bg-primary">
+            <p>Espacio de 2</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Segmentand container con grid y columns en mas container-->
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h3>Contenedor con gid dentro de col izq</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis enim corrupti, expedita deleniti minima suscipit. Qui, dolores facilis incidunt saepe, iure vitae delectus similique labore totam quidem excepturi magni?</p>
+                </div>
+                <div class="col">
+                  <h3>Contenedor con gid dentro de col der</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis enim corrupti, expedita deleniti minima suscipit. Qui, dolores facilis incidunt saepe, iure vitae delectus similique labore totam quidem excepturi magni?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure animi doloremque facere dolor, nam aliquid quis est obcaecati voluptatibus! Tenetur, a nostrum. Esse deleniti sunt, ad ipsa iure quaerat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Ejercicio https://getbootstrap.com/docs/5.3/examples/heroes/-->
+      <br>
+      <br>
+      <br>
+      <div class="container-fluid bg-white">
+        <div class="row">
+          <div class="col text-center">
+            <img src="assets/logo.png" alt="logo bootstrap"/>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <h1>Centered hero</h1>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3"></div>
+          <div class="col-6 text-center">
+            <span style="font-family: 'Roboto Flex', sans-serif; font-size: 20px;">Quickly design and customize responsive mobile-first sites with Bootstrap, 
+              the world’s most popular front-end open source toolkit, featuring Sass variables 
+              and mixins, responsive grid system, extensive prebuilt components, and powerful 
+              JavaScript plugins.</span>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <p><input class="btn btn-primary" type="button" value="Primary Button"/> <input class="btn btn-outline-secondary" type="button" value="Secodary"/></p> 
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-5">
+          <div class="col text-bg-secondary">
+            <br>
+          </div>
+        </div>
+        <!--Segundo modulo-->
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h1>Centered screenshot</h1>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3"></div>
+          <div class="col-6 text-center">
+            <span style="font-family: 'Roboto Flex', sans-serif; font-size: 20px;">Quickly design and customize responsive mobile-first sites with Bootstrap, 
+              the world’s most popular front-end open source toolkit, featuring Sass variables 
+              and mixins, responsive grid system, extensive prebuilt components, and powerful 
+              JavaScript plugins.</span>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <p><input class="btn btn-primary" type="button" value="Primary Button"/> <input class="btn btn-outline-secondary" type="button" value="Secodary"/></p> 
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-2"></div>
+          <div class="col-8 text-center">
+            <img src="assets/bootstrap-docs.png" alt="pantalla 1" width="700px"/>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row mt-5">
+          <div class="col text-bg-secondary">
+            <br>
+          </div>
+        </div>
+
+        <!--Tercer modulo-->
+        <div class="row mt-5 ms-5">
+          <div class="col">
+            <div class="container">
+              <div class="row">
+                <div class="col text-start">
+                  <h1 style="font-size: 60px;">Responsive left-aligned hero with image</h1>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col text-start">
+                  <span style="font-family: 'Roboto Flex', sans-serif; font-size: 25px;">Quickly design and customize responsive mobile-first sites with Bootstrap, 
+                    the world’s most popular front-end open source toolkit, featuring Sass variables 
+                    and mixins, responsive grid system, extensive prebuilt components, and powerful 
+                    JavaScript plugins.</span>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-6 text-start">
+                  <p><input class="btn btn-primary" type="button" value="Primary"/> <input class="btn btn-outline-secondary" type="button" value="Default"/></p> 
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+              </div>
+              <div class="col">    
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="row mt-3 me-3">
+              <div class="col-2"></div>
+              <div class="col-8 text-center">
+                <img src="assets/bootstrap-themes.png" alt="pantalla 1" width="500px"/>
+              </div>
+              <div class="col-2"></div>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-bg-secondary">
+          <br>
+        </div>
+
+      <!--Cuarto modulo-->
+      <div class="row mt-5 ms-5">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col text-start">
+                <h1 style="font-size: 60px;">Vertically centered hero sign-up form</h1>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col text-start">
+                <span style="font-family: 'Roboto Flex', sans-serif; font-size: 25px;">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="row mt-3 me-3">
+            <div class="col-2"></div>
+            <div class="col-8 text-start bg-light">
+              <div class="mt-4 ms2- me-2 mb-4 pt-3 pb-3">
+                <p><input class="form-control" type="text" placeholder="Email addrees" /></p>
+                <p><input class="form-control" type="password" placeholder="Password" /></p>
+                <p><input type="checkbox" /> Remember me</p>
+                <p><input type="button" class="btn btn-primary container-fluid" value="Sing Up" /></p>
+                <hr>
+                <p>By clicking Sign up, you agree to the terms of use.</p>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col text-bg-secondary">
+        <br>
+      </div>
+    </div>
+
+    <!--Quinto Modulo-->
+    <div class="bg-dark">
+    <div class="row mt-3 bg-dark">
+      <div class="col text-center">
+        <h1 style="color: white">Dark mode hero</h1>
+      </div>
+    </div>
+      <div class="row mt-3 bg-dark">
+        <div class="col-3"></div>
+        <div class="col-6 text-center">
+          <span style="font-family: 'Roboto Flex', sans-serif; font-size: 20px; color: gray;">Quickly design and customize responsive mobile-first sites with Bootstrap, 
+            the world’s most popular front-end open source toolkit, featuring Sass variables 
+            and mixins, responsive grid system, extensive prebuilt components, and powerful 
+            JavaScript plugins.</span>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row mt-3 bg-dark">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+          <p><input class="btn btn-primary" type="button" value="Primary Button"/> <input class="btn btn-outline-secondary" type="button" value="Secodary"/></p> 
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-bg-secondary">
+          <br>
+        </div>
+      </div>
+  
+    </div>
+    
     <!--Integrar Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
