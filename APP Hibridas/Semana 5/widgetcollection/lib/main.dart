@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgetcollection/pages/wColumRow.dart';
 import 'package:widgetcollection/pages/wContainer.dart';
 import 'package:widgetcollection/pages/wExpanded.dart';
 
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const WExpanded());
+        home: const WColumRow());
   }
 }
