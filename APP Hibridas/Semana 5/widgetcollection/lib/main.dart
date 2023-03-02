@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:widgetcollection/pages/wColumRow.dart';
 import 'package:widgetcollection/pages/wContainer.dart';
 import 'package:widgetcollection/pages/wExpanded.dart';
+import 'package:widgetcollection/pages/wListBContainer.dart';
+import 'package:widgetcollection/pages/wListBuilder.dart';
+import 'package:widgetcollection/pages/wListView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +21,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const WColumRow());
+        home: WListViewBC());
   }
 }
