@@ -13,8 +13,8 @@ if not cam.isOpened():
 
 #Nota el primer elemento es H el segundo es S y el tercero V
 #Nota S y V se quedan fijos
-ColorBajo = np.array([50, 100, 20], np.uint8)
-ColorAlto = np.array([70, 255, 255], np.uint8)
+ColorBajo = np.array([1, 100, 20], np.uint8)
+ColorAlto = np.array([10, 255, 255], np.uint8)
 
 while True:
     #Declaramos 2 variables ret imagen, frame el fotograma
