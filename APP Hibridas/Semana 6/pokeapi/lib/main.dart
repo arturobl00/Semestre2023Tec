@@ -40,10 +40,22 @@ class MyPokemon extends StatelessWidget {
               itemCount: pokemons.length,
               itemBuilder: (context, index) {
                 final pokemon = pokemons[index];
-                return ListTile(
+                return Card(
+                  child: Column(
+                    children: [
+                      Text("Nombre: ${pokemon.name}"),
+                      Text("Abilidad: ${pokemon.abilities}"),
+                      Text("Movimiento: ${pokemon.moves}"),
+                      Text("Tipo: ${pokemon.type}"),
+                      Image.network(pokemon.imageUrl)
+                    ],
+                  ),
+                );
+                /*ListTile(
                   leading: Image.network(pokemon.imageUrl),
                   title: Text(pokemon.name),
-                );
+                  //subtitle: Text(pokemon.abilities),
+                );*/
               },
             );
           } else if (snapshot.hasError) {
@@ -64,8 +76,17 @@ class MyPokemon extends StatelessWidget {
 class Pokemon {
   final String name;
   final String imageUrl;
+  final String abilities;
+  final String moves;
+  final String type;
 
-  Pokemon({required this.name, required this.imageUrl});
+  Pokemon({
+    required this.name,
+    required this.imageUrl,
+    required this.abilities,
+    required this.moves,
+    required this.type,
+  });
 }
 
 class PokemonApi {
@@ -74,7 +95,7 @@ class PokemonApi {
 
   //Declarar la lista de elementos que tiene el api
   static Future<List<Pokemon>> fetchPokemons() async {
-    final response = await http.get(Uri.parse('$_baseUrl/pokemon?limit=151'));
+    final response = await http.get(Uri.parse('$_baseUrl/pokemon?limit=15'));
     if (response.statusCode == 200) {
       print(response.body);
       final decodedBody = jsonDecode(response.body);
@@ -86,6 +107,9 @@ class PokemonApi {
           final pokemon = Pokemon(
             name: pokemonDecodedBody['name'],
             imageUrl: pokemonDecodedBody['sprites']['front_default'],
+            abilities: pokemonDecodedBody['abilities'][0]['ability']['name'],
+            moves: pokemonDecodedBody['moves'][0]['move']['name'],
+            type: pokemonDecodedBody['types'][0]['type']['name'],
           );
           pokemons.add(pokemon);
         }
