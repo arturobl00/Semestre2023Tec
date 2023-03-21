@@ -13,7 +13,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 # Pulgar
 thumb_points = [1, 2, 4]
@@ -44,6 +44,7 @@ with mp_hands.Hands(
           height, width, _ = frame.shape
           frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
           results = hands.process(frame_rgb)
+          print(results)
           fingers_counter = "_"
           thickness = [2, 2, 2, 2, 2]
 
@@ -54,6 +55,8 @@ with mp_hands.Hands(
                coordinates_fb = []
                for hand_landmarks in results.multi_hand_landmarks:
                     for index in thumb_points:
+                         x = int(hand_landmarks.landmark[index].x * width)
+                         
                          x = int(hand_landmarks.landmark[index].x * width)
                          y = int(hand_landmarks.landmark[index].y * height)
                          coordinates_thumb.append([x, y])

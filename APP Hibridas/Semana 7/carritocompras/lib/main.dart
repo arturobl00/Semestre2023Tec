@@ -31,6 +31,7 @@ class _GroceryStoreHomeState extends State<GroceryStoreHome> {
   final _backgroundColor = Color.fromARGB(255, 206, 192, 150);
 
   final _cartBarHeight = 100.0;
+  final _panelTransition = Duration(milliseconds: 500);
 
   final bloc = GroceryStoreBloc();
   void _onVerticalGesture(DragUpdateDetails details) {
@@ -50,6 +51,14 @@ class _GroceryStoreHomeState extends State<GroceryStoreHome> {
     }
   }
 
+  _getTopForBlackPanel(GroceryState state, Size size) {
+    if (state == GroceryState.normal) {
+      return size.height - kToolbarHeight - _cartBarHeight;
+    } else if (state == GroceryState.cart) {
+      return _cartBarHeight / 2;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -65,7 +74,9 @@ class _GroceryStoreHomeState extends State<GroceryStoreHome> {
                 Expanded(
                     child: Stack(
                   children: [
-                    Positioned(
+                    //White panel
+                    AnimatedPositioned(
+                      duration: _panelTransition,
                         left: 0,
                         right: 0,
                         top: _getTopForWhitePanel(bloc.groceryState, size),
@@ -79,10 +90,12 @@ class _GroceryStoreHomeState extends State<GroceryStoreHome> {
                             ),
                           ),
                         )),
-                    Positioned(
+                    //Black panel
+                    AnimatedPositioned(
+                      duration: _panelTransition,
                         left: 0,
                         right: 0,
-                        top: size.height - kToolbarHeight - _cartBarHeight,
+                        top: _getTopForBlackPanel(bloc.groceryState, size),
                         height: size.height - kToolbarHeight,
                         child: GestureDetector(
                           onVerticalDragUpdate: _onVerticalGesture,
