@@ -1,4 +1,6 @@
+import 'package:carritocompras/grocery_provider.dart';
 import 'package:carritocompras/grocery_store_bloc.dart';
+import 'package:carritocompras/grocery_store_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -62,54 +64,58 @@ class _GroceryStoreHomeState extends State<GroceryStoreHome> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return AnimatedBuilder(
-      animation: bloc,
-      builder: (context, _) {
-        return Scaffold(
-          backgroundColor: Colors.black,
-          body: SafeArea(
-            child: Column(
-              children: [
-                _AppBarGrocery(),
-                Expanded(
-                    child: Stack(
-                  children: [
-                    //White panel
-                    AnimatedPositioned(
-                      duration: _panelTransition,
-                        left: 0,
-                        right: 0,
-                        top: _getTopForWhitePanel(bloc.groceryState, size),
-                        height: size.height - kToolbarHeight,
-                        child: Container(
-                          decoration: const BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(30),
-                              bottomRight: Radius.circular(30),
-                            ),
-                          ),
-                        )),
-                    //Black panel
-                    AnimatedPositioned(
-                      duration: _panelTransition,
-                        left: 0,
-                        right: 0,
-                        top: _getTopForBlackPanel(bloc.groceryState, size),
-                        height: size.height - kToolbarHeight,
-                        child: GestureDetector(
-                          onVerticalDragUpdate: _onVerticalGesture,
+    return GroceryProvider(
+      bloc: bloc,
+      child: AnimatedBuilder(
+        animation: bloc,
+        builder: (context, _) {
+          return Scaffold(
+            backgroundColor: Colors.black,
+            body: SafeArea(
+              child: Column(
+                children: [
+                  _AppBarGrocery(),
+                  Expanded(
+                      child: Stack(
+                    children: [
+                      //White panel
+                      AnimatedPositioned(
+                          duration: _panelTransition,
+                          left: 0,
+                          right: 0,
+                          top: _getTopForWhitePanel(bloc.groceryState, size),
+                          height: size.height - kToolbarHeight,
                           child: Container(
-                            color: Colors.black,
-                          ),
-                        ))
-                  ],
-                ))
-              ],
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(30),
+                                bottomRight: Radius.circular(30),
+                              ),
+                            ),
+                            child: const GroceryStoreList(),
+                          )),
+                      //Black panel
+                      AnimatedPositioned(
+                          duration: _panelTransition,
+                          left: 0,
+                          right: 0,
+                          top: _getTopForBlackPanel(bloc.groceryState, size),
+                          height: size.height - kToolbarHeight,
+                          child: GestureDetector(
+                            onVerticalDragUpdate: _onVerticalGesture,
+                            child: Container(
+                              color: Colors.black,
+                            ),
+                          ))
+                    ],
+                  ))
+                ],
+              ),
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
   }
 }
