@@ -9,12 +9,9 @@ class GroceryStoreList extends StatelessWidget {
     final bloc = GroceryProvider.of(context)?.bloc;
     return GridView.builder(
         padding: const EdgeInsets.only(top: 150.0),
-        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 200,
-            mainAxisExtent: 350,
-            childAspectRatio: 2,
-            crossAxisSpacing: 2,
-            mainAxisSpacing: 2),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+        ),
         itemCount: bloc!.catalog.length,
         itemBuilder: (context, index) {
           final product = bloc.catalog[index];
@@ -33,8 +30,8 @@ class GroceryStoreList extends StatelessWidget {
                       Image.asset(
                         product.image,
                         fit: BoxFit.cover,
-                        height: 200,
-                        width: 120,
+                        height: 80,
+                        width: 80,
                       ),
                       Padding(
                         padding: const EdgeInsets.all(10.0),

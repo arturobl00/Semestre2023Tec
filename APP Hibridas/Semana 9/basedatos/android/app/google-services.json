@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942964897023",
+    "project_id": "dwasemana9",
+    "storage_bucket": "dwasemana9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942964897023:android:493757479326e6b1f808ca",
+        "android_client_info": {
+          "package_name": "com.example.basedatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942964897023-j95mrogjo8mos10rb758j1cb3ct1e3sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhrkhs3Zx57UdRM2ws6Z5C9kddhK_2lBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942964897023-j95mrogjo8mos10rb758j1cb3ct1e3sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
