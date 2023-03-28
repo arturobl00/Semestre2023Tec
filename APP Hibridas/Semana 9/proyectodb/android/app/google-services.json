@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "942964897023",
+    "project_id": "dwasemana9",
+    "storage_bucket": "dwasemana9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942964897023:android:493757479326e6b1f808ca",
+        "android_client_info": {
+          "package_name": "com.example.basedatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942964897023-j95mrogjo8mos10rb758j1cb3ct1e3sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhrkhs3Zx57UdRM2ws6Z5C9kddhK_2lBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942964897023-j95mrogjo8mos10rb758j1cb3ct1e3sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "942964897023-g2p3tpt8p7ijpkr430bcev4qhv5gl4i2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.basedatos"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942964897023:android:d92c14a0879561dcf808ca",
+        "android_client_info": {
+          "package_name": "com.example.proyectodb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942964897023-j95mrogjo8mos10rb758j1cb3ct1e3sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhrkhs3Zx57UdRM2ws6Z5C9kddhK_2lBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942964897023-j95mrogjo8mos10rb758j1cb3ct1e3sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "942964897023-g2p3tpt8p7ijpkr430bcev4qhv5gl4i2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.basedatos"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
