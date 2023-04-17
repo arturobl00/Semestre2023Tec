@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:proyectodb/pages/home_page.dart';
 import 'package:proyectodb/services/firebase_services.dart';
 import 'firebase_options.dart';
 
@@ -18,11 +19,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DemoDB(),
+      home: const HomePage(),
     );
   }
 }
