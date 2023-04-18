@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mymessenger/screens/home_screen.dart';
+import 'package:mymessenger/screens/auth/login_screen.dart';
+
+//Definir constante global
+
+late Size mq;
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }
