@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mymessenger/screens/home_screen.dart';
 import '../../main.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -34,35 +35,41 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           AnimatedPositioned(
             top: _isAnimate ? mq.height * 0.10 : 0,
-            left: mq.width * .32,
+            left: mq.width * .25,
             duration: const Duration(seconds: 1),
             child: Image.asset('images/speak.png'),
             width: 200,
           ),
           Positioned(
               bottom: mq.height * 0.20,
-              left: mq.width * 0.16,
-              child: Container(
-                height: 70,
-                width: 330,
-                decoration: BoxDecoration(
-                    color: Color.fromARGB(230, 117, 222, 121),
-                    borderRadius: BorderRadius.circular(40)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset('images/google.png'),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        "Signin with Google",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )
-                    ],
+              left: mq.width * 0.1,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (_) => const HomeScreen()));
+                },
+                child: Container(
+                  height: 70,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(230, 117, 222, 121),
+                      borderRadius: BorderRadius.circular(40)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('images/google.png'),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "Signin with Google",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ))
