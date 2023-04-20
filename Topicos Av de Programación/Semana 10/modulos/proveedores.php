@@ -32,24 +32,69 @@
         </div>
         <div class="row mt-5">
             <div class="col">
-                <a><img alt="" src="../assets/usuarios.png" width="100"/></a>
-                <p>Usuarios</p>
+                <a href="./acciones/addproveedor.php"><img alt="" src="../assets/adduser.png" width="100"/></a>
+                <p>Agregar Proveedor</p>
             </div>
         </div>
         <div class="row mt-5">
             <h3>Lista de Proveedores</h3>
         </div>
         <div class="row mt-5">
-            <form>
-                <p class="form-control">Buscar por: <select class="form-control" name="buscar">
-                    <option value="1">Número de Documento</option>
+            <div class="col">
+                <form>
+                <p>Buscar por:
+                <select name="filtro" class="form-select-sm">
+                    <option value="1">Id</option>
                     <option value="1">Nombre</option>
                 </select>
-                <input class="form-control" type="text" name="dato" />
-                <input class="btn btn" type="submit">
-            </p>
-
-            </form>
+                <input type="text" class="form-control-sm" name="valor"/>
+                <input type="submit" class="btn btn-primary" value="Buscar" name="boton"/>
+                <input type="submit" class="btn btn-secondary" value="Limpiar" name="boton"/>
+                </p>
+                </form>
+            </div>
+        </div>
+        <!--Data Table-->
+        <div class="row mt-5">
+            <div class="col">
+                <!--LLamada a base de datos-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Cocacola Company</td>
+                            <td><a href="#" class="btn btn-success">Editar</a></td>
+                            <td><a href="#" class="btn btn-danger">Borrar</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Peñafiel</td>
+                            <td><a href="#" class="btn btn-success">Editar</a></td>
+                            <td><a href="#" class="btn btn-danger">Borrar</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pepsico</td>
+                            <td><a href="#" class="btn btn-success">Editar</a></td>
+                            <td><a href="#" class="btn btn-danger">Borrar</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Proper and Gamer</td>
+                            <td><a href="#" class="btn btn-success">Editar</a></td>
+                            <td><a href="#" class="btn btn-danger">Borrar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
