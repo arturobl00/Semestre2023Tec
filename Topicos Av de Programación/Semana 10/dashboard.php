@@ -49,7 +49,7 @@
                 <p>Clientes</p>
             </div>
             <div class="col">
-            <img alt="" src="assets/proveedor.png" width="100"/>
+            <a href="./modulos/proveedores.php"><img alt="" src="assets/proveedor.png" width="100"/></a>
                 <p>Proveedores</p>
             </div>
             <div class="col">

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "406680706395",
+    "project_id": "mymessengerchat",
+    "storage_bucket": "mymessengerchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406680706395:android:a7fc0945960ecf9615ce7e",
+        "android_client_info": {
+          "package_name": "com.example.chatflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406680706395-ktkj3fdnoonl8lo7spvuo68879nojq79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgeGUGhzjrhwyNd1-tlbbqLtvRftfXZvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406680706395-ktkj3fdnoonl8lo7spvuo68879nojq79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406680706395:android:d2c9f61c3ea2467115ce7e",
+        "android_client_info": {
+          "package_name": "com.example.chatmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406680706395-ktkj3fdnoonl8lo7spvuo68879nojq79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgeGUGhzjrhwyNd1-tlbbqLtvRftfXZvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406680706395-ktkj3fdnoonl8lo7spvuo68879nojq79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
