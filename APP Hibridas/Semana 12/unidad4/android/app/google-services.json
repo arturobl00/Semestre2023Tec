@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "718063046068",
+    "project_id": "chatgroup-30a30",
+    "storage_bucket": "chatgroup-30a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718063046068:android:831b2e85e567f3eb5eb6e1",
+        "android_client_info": {
+          "package_name": "com.example.groupchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718063046068-mfnhsfcdd236jeplopmsqhnukedj24nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhBB5E0kxOILDD40mxL7aP56tzAlk_1Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718063046068-mfnhsfcdd236jeplopmsqhnukedj24nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718063046068:android:14eccc19d1d23e185eb6e1",
+        "android_client_info": {
+          "package_name": "com.example.unidad4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718063046068-mfnhsfcdd236jeplopmsqhnukedj24nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhBB5E0kxOILDD40mxL7aP56tzAlk_1Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718063046068-mfnhsfcdd236jeplopmsqhnukedj24nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
