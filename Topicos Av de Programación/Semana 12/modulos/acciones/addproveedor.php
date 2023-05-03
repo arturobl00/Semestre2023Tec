@@ -32,9 +32,20 @@
         </div>
         <form method="post">
             <h2>Formulario de Registro de Proveedores</h2>
-            <input type="text" class="form-control" value="" name="name" placeholder="Introduce el nomble completo del proveedor"/>
-            <input type="submit" class="btn btn-primary" name="Agrega" value="Agregar Registroddd"/>
-            <a href="../proveedores.php">Cerrar</a>
+            <div class="mt-4">
+                <div class="row">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" class="form-control" value="" name="name" placeholder="Introduce el nomble completo del proveedor"/>
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" class="btn btn-primary" name="Agrega" value="Agregar"/>
+                        <a href="../proveedores.php" class="btn btn-danger">Cerrar</a>
+                    </div>
+                    <div class="col-2">                    </div>
+                </div>
+            </div>
         </form> 
         <?php
             if($_POST){
@@ -44,10 +55,19 @@
                 $bd = "tpv";
 
                 $conn = mysqli_connect($server, $user, $pass, $bd);
-
                 $nombreCompleto = $_POST['name'];
-                $inserta = "Insert into proveedor (nombreCompleto) values ('$nombreCompleto')";
-                $ejecutar = mysqli_query($conn, $inserta);
+
+                $busca = "Select * from proveedor where nombreCompleto = $nombreCompleto";
+                $ejecutar1 = mysqli_query($conn, $busca);
+                
+                if (mysqli_num_rows($ejecutar1) > 0) {
+                    // output data of each row
+                    while($row = mysqli_fetch_assoc($ejecutar1)) {
+                      echo "id: ".$row["idproveedor"]." - Name: ".$row["nombreCompleto"]."<br>";
+                    }
+                  } else {
+                    echo "0 results";
+                  }
             }
 
         ?>       
