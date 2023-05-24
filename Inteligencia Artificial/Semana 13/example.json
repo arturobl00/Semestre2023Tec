@@ -1,0 +1,24 @@
+{
+  "__v": 1,
+  "description": "Base de conocimiento de ejemplo",
+  "entries": [
+    {
+      "name": "A",
+      "description": "El objeto A",
+      "props": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "B",
+      "description": "El objeto B",
+      "props": [
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ]
+}

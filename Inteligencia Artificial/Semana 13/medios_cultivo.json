@@ -1,0 +1,303 @@
+{
+  "__v": 1,
+  "description": "Base de conocimiento de medios de cultivo",
+  "entries": [
+    {
+      "name": "Agar MacConkey",
+      "description": "El agar MacConkey es un medio de cultivo que inhibe el crecimiento de las bacterias gram positivas y estimula la reproducción de los bacilos gram negativos, los cuales suelen estar detrás de infecciones urinarias, diarreas, enfermedades gastrointestinales, bacteriemias (bacterias en la sangre), peritonitis e incluso el tifus, el cólera o la peste.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla gram negativos",
+        "Estudia enfermedades"
+      ]
+    },
+    {
+      "name": "Agar chocolate",
+      "description": "El agar chocolate es el medio de cultivo que se obtiene al calentar el agar sangre. Sea como sea, el más utilizado es aquel en el que se añade vancomicina (un antibiótico) y distintos nutrientes para estimular el crecimiento únicamente de \"Neisseria gonorrhoeae\" y \"Neisseria meningitidis\", bacterias responsables de la gonorrea y meningitis, respectivamente.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Neisseria gonorrhoeae",
+        "Aísla Neisseria meningitidis",
+        "Lleva vancomicina"
+      ]
+    },
+    {
+      "name": "Agar Sabouraud",
+      "description": "El agar Sabouraud es un medio de enriquecimiento y aislamiento de distintas especies de hongos, levaduras y mohos. Por lo tanto, es útil cuando no queremos detectar bacterias (de hecho, tienen distintos antibióticos para impedir su desarrollo), sino este tipo de microorganismos, sean patógenos o no.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Hongos",
+        "Aísla levaduras",
+        "Aísla mohos",
+        "Lleva antibióticos"
+      ]
+    },
+    {
+      "name": "Caldo tetrationato",
+      "description": "El caldo tetrationato es un medio líquido (a diferencia de los agares sólidos que hemos ido viendo) que contiene sales biliares y otras sustancias inhibitorias que impiden el desarrollo de las bacterias gram positivas y el de algunas gram negativas, pues solo nos interesa que crezcan las bacterias que disponen de una enzima determinada, que es la tetrationato reductasa (de ahí el nombre). Este medio de cultivo es muy útil, pues, para el aislamiento de colonias de \"Salmonella\", responsable de enfermedades de transmisión alimentaria.",
+      "props": [
+        "Es caldo",
+        "Aísla",
+        "Aísla bacterias con ezima tetrationato reductasa"
+      ]
+    },
+    {
+      "name": "Caldo selenito",
+      "description": "El caldo selenito es otro medio de cultivo líquido para el aislamiento de \"Salmonella\", aunque en este caso su método de acción no se basa en detectar la enzima anterior, sino en inhibir (mediante el selenito) el crecimiento de otras bacterias presentes en nuestro tracto digestivo.",
+      "props": [
+        "Es caldo",
+        "Aísla",
+        "Aísla Salmonella."
+      ]
+    },
+    {
+      "name": "Agar EMB",
+      "description": "El agar EMB es un medio de cultivo sólido muy útil para el aislamiento de enterobacterias, es decir, aquellas que habitan de forma natural nuestros intestinos pero que, ante determinadas situaciones, pueden pasar a comportarse como patógenos. \"Escherichia coli\" es el claro ejemplo de ello, y, además, este medio permite que se observen claramente sus colonias, las cuales desarrollan un color brillante negro verdoso.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Escherichia Coli",
+        "Cambia el color de las bacterias"
+      ]
+    },
+    {
+      "name": "Agar SS",
+      "description": "El agar SS es un medio de cultivo sólido utilizado para el aislamiento de, además de \"Salmonella\", \"Shigella\", una bacteria que normalmente se contagia a través de alimentos o agua contaminada y que provoca una infección que cursa con diarrea (la cual suele contener sangre), fiebre y dolor abdominal.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Salmonella",
+        "Sirve en aguas contaminadas",
+        "Aísla Shigella"
+      ]
+    },
+    {
+      "name": "Agar Vogel-Johnson",
+      "description": "El agar Vogel-Johnson es un medio de cultivo sólido diseñado para el aislamiento de \"Staphylococcus aureus\", una bacteria que puede causar muchos tipos de infecciones distintas, desde enfermedades de la piel (es lo más común) hasta infecciones óseas, pasando por neumonías, bacteriemias, endocarditis (infección del corazón) e intoxicaciones alimentarias. Inhibe el crecimiento de todas las gram negativas y el de algunas gram positivas.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Staphylococus Aureus",
+        "Elimina bacterias con coagulasa",
+        "Es poco selectivo"
+      ]
+    },
+    {
+      "name": "Agar manitol sal",
+      "description": "El agar manitol sal, también conocido como manitol salado, es un medio de cultivo sólido que sigue siendo utilizado para el aislamiento de \"Staphylococcus aureus\", aunque en este caso el poder inhibitorio sobre el resto de bacterias es más fuerte. Es decir, es más selectivo que el Vogel-Johnson",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Staphylococus Aureus",
+        "Elimina bacterias con coagulasa",
+        "Es muy selectivo"
+      ]
+    },
+    {
+      "name": "Agar BCYE",
+      "description": "El agar BCYE es un medio de cultivo sólido especialmente diseñado para el aislamiento de \"Legionella\" y \"Nocardia\", dos géneros de bacterias responsables de una neumonía grave (potencialmente mortal) y de una infección pulmonar que puede diseminar, en personas inmunodeprimidas, a otros órganos (piel, cerebro, corazón…), respectivamente.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Legionella",
+        "Aísla Nocardia"
+      ]
+    },
+    {
+      "name": "Agar BHI",
+      "description": "El agar BHI es un medio de cultivo sólido que vuelve a ser útil para el aislamiento de hongos, aunque en este caso se centra en la detección de aquellos que actúan como patógenos. De nuevo, dispone de varios antibióticos para inhibir el crecimiento de las bacterias.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla hongos",
+        "Aísla hongos patógenos"
+      ]
+    },
+    {
+      "name": "Agar Baird-Parker",
+      "description": "El agar Baird-Parker es un medio de cultivo sólido diseñado para el aislamiento de \"Staphylococcus aureus\", aunque en este caso permite el crecimiento de otras especies de estafilococos, siempre que sean coagulasa positivos, es decir, que dispongan de esta enzima conocida como coagulasa.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Staphylococus Aureus",
+        "Aísla bacterias con coagulasa"
+      ]
+    },
+    {
+      "name": "Agar verde brillante",
+      "description": "El verde brillante es una sustancia inhibidora que impide el crecimiento de todas las bacterias gram positivas y de la mayoría de gram negativas. En este sentido, el agar verde brillante es un medio de cultivo sólido utilizado para el aislamiento de distintas especies de \"Salmonella\"",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla Salmonella",
+        "Aísla distintas especies de salmonella"
+      ]
+    },
+    {
+      "name": "Agar sangre",
+      "description": "Como su propio nombre indica, el agar sangre dispone de sangre en su composición, la cual suele ser de ovejas, caballos o, a veces, humanos. Es utilizado para estudiar la función hemolítica de distintos patógenos, es decir, su capacidad para destruir los eritrocitos (glóbulos rojos) cuando circulan por el torrente sanguíneo. Dependiendo de lo que añadamos, permitirá el crecimiento de unas especies concretas, siendo un medio muy selectivo.",
+      "props": [
+        "Es agar",
+        "Es prueba diferencial",
+        "Prueba capacidad hemolítica de patógenos",
+        "Contiene sangre"
+      ]
+    },
+    {
+      "name": "Caldo EC",
+      "description": "El caldo EC es un medio de cultivo líquido diseñado para permitir el crecimiento de coliformes, un grupo de distintos géneros de bacterias que sirven como indicador de la contaminación fecal tanto de aguas como de alimentos.",
+      "props": [
+        "Es caldo",
+        "Es prueba diferencial",
+        "Detecta materia fecal en alimento"
+      ]
+    },
+    {
+      "name": "Agar TCBS",
+      "description": "El agar TCBS es un medio de cultivo sólido que contiene Tiosulfato, Citrato y Sales Biliares. De ahí el nombre. Sea como sea, estas sustancias estimulan el crecimiento selectivo de distintas especies de \"Vibrio\", un género bacteriano que provoca enfermedades gastrointestinales y donde destaca \"Vibrio cholerae\", responsable del cólera.",
+      "props": [
+        "Es agar",
+        "Es prueba diferencial",
+        "Detecta Vibrio"
+      ]
+    },
+    {
+      "name": "Medio TSI",
+      "description": "El medio TSI es un medio de cultivo diferencial en el que se busca determinar la capacidad de la bacteria para degradar el azúcar y formar gas y sulfuros de hidrógeno. Dependiendo de lo que observemos (hay perfiles que nos permiten comparar y saber ante qué nos encontramos), podremos determinar qué bacteria había en la muestra.",
+      "props": [
+        "No es agar ni caldo",
+        "Es prueba diferencial",
+        "Determina degradación de azúcar"
+      ]
+    },
+    {
+      "name": "Citrato de Simmons",
+      "description": "El citrato de Simmons es un medio de cultivo diferencial útil para, valga la redundancia, diferenciar entre distintas especies de coliformes. El medio se basa en determinar la capacidad de las bacterias para utilizar el citrato como fuente de carbono. Si no es capaz de usarlo, el medio se mantendrá verde. Pero si es capaz, pasará a ser azul.",
+      "props": [
+        "No es agar ni caldo",
+        "Es prueba diferencial",
+        "Determina capacidad de uso de citratos como fuente de carbono"
+      ]
+    },
+    {
+      "name": "Caldo urea",
+      "description": "El caldo urea es un medio de cultivo diferencial que permite, de nuevo, diferenciar entre distintas especies. Se basa en determinar la capacidad de la bacteria de degradar la urea. Si la bacteria tiene la enzima necesaria, el color pasará a ser rojo, mientras que si no dispone de ella, se mantendrá en el color original.",
+      "props": [
+        "Es caldo",
+        "Es prueba diferencial",
+        "Determina capacidad de degradar la urea"
+      ]
+    },
+    {
+      "name": "Medio SIM",
+      "description": "El medio SIM es un medio de cultivo diferencial que determina la capacidad de la bacteria para formar indol (un compuesto químico orgánico), producir sulfuro de hidrógeno y moverse. Dependiendo del perfil obtenido, estaremos ante una especie u otra.",
+      "props": [
+        "No es agar ni caldo",
+        "Es prueba diferencial",
+        "Determina capacidad de producción de indol"
+      ]
+    },
+    {
+      "name": "Agar Dextrosa y Papa",
+      "description": "Agar Dextrosa y Papa es un medio utilizado para el cultivo y cuenta de hongos y levaduras a partir de muestras de alimentos, productos lácteos y cosméticos. La infusión de papa promueve un crecimiento abundante de los hongos y levaduras. El bajo pH de este medio ayuda a inhibir el crecimiento bacteriano, permitiendo únicamente el crecimiento de hongos y levaduras.",
+      "props": [
+        "Es agar",
+        "Aísla",
+        "Aísla hongos",
+        "Aísla levaduras",
+        "Determina hongos en alimentos"
+      ]
+    },
+    {
+      "name": "Medio MIO",
+      "description": "Medio de cultivo utilizado para diferenciación de Enterobacterias. Este medio es un medio de cultivo semisólido altamente nutritivo, también es conocido como Medio para Movilidad Indol y Ornitina. El agar es adicionado para demostrar la movilidad que puede observarse por un enturbiamiento del medio o por un crecimiento que difunde más allá de la línea de inoculación.",
+      "props": [
+        "No es agar ni caldo",
+        "Es prueba diferencial",
+        "Demuestra la movilidad de enterobacterias"
+      ]
+    },
+    {
+      "name": "Caldo Tioglicolato",
+      "description": "Medio usado para el cultivo de microorganismos anaerobios, aerobios y microaerófilos y pruebas de esterilidad de Biológicos",
+      "props": [
+        "Es caldo",
+        "Es prueba diferencial",
+        "Es prueba de esterilidad"
+      ]
+    },
+    {
+      "name": "Medio CTA",
+      "description": "Medio CTA (Agar Cistina Tripticaseína) es utilizado para conservar cepas, investigar la movilidad de microorganismos difíciles y si se le añade carbohidratos para hacer estudios de fermentación. Esta fórmula fue desarrollada por Vera como un medio simple semisólido para la identificación y conservación de gonococos y otras bacterias.",
+      "props": [
+        "No es agar ni caldo",
+        "Es prueba diferencial",
+        "Permite conservar cepas",
+        "Identifica gonococos"
+      ]
+    },
+    {
+      "name": "Caldo Cerebro Corazón",
+      "description": "Medio enriquecido para microorganismos con numerosos requerimientos nutritivos. Es un medio líquido que permite el crecimiento de microorganismos exigentes como neumococos y estreptococos, además favorece el cultivo de bacterias aeróbicas y anaeróbicas.",
+      "props": [
+        "Es caldo",
+        "Aísla",
+        "Aísla Neumococos",
+        "Aísla Estreptococos"
+      ]
+    },
+    {
+      "name": "Caldo MR-VP",
+      "description": "Caldo MR-VP es utilizado para la identificación bacteriana basado en la reacción de Rojo de Metilo y Voges Proskauer. En 1915 Clark y Lubs demostraron que al agregar rojo de metilo a cutivos de Escherichia coli se observa un color rojo debido a la alta acidez producida por la fermentación de la dextrosa, mientras Klebsiella pneumoniae y Enterobacter aerogenes produce pequeñas cantidades de ácido que es convertido a acetoides resultando en una reacción alcalina.",
+      "props": [
+        "Es caldo",
+        "Es prueba diferencial",
+        "Identifica bacterias",
+        "Usa rojo de metilo",
+        "Usa Voges Proskauer"
+      ]
+    },
+    {
+      "name": "Caldo Lactosado",
+      "description": "Caldo Lactosado es un medio de cultivo utilizado para la recuperación de coliformes en agua y alimentos con base en la formación de gas. Es utilizado en el pre-enriquecimiento en la búsqueda de Salmonella spp. En alimentos procesados, esto debido a que las salmonellas pueden ser dañadas en el proceso a los que se someten los alimentos.",
+      "props": [
+        "Es caldo",
+        "Aísla",
+        "Aísla coliformes",
+        "Es usado en agua y alimentos",
+        "Se basa en la formación de gas"
+      ]
+    },
+    {
+      "name": "Caldo Rojo de Fenol y Sacarosa",
+      "description": "Medio útil para la caracterización de Enterobacterias basado en su capacidad de fermentar la sacarosa. La peptona de caseína provee la fuente de nitrógeno, vitaminas, minerales y aminoácidos esenciales para el crecimiento, y permite el desarrollo de una amplia variedad de microorganismos exigentes.",
+      "props": [
+        "Es caldo",
+        "Es prueba diferencial",
+        "Determina capacidad de fermentación de sacarosa"
+      ]
+    },
+    {
+      "name": "Caldo Nutritivo",
+      "description": "Caldo Nutritivo es utilizado para el cultivo de varias especies de microorganismos no fastidiosos. Este medio con cloruro de sodio al 5% es usado para la identificación de Estreptococos. Además permite diluir metabolitos tóxicos, sustancias inhibidoras y recuperar células dañadas.",
+      "props": [
+        "Es caldo",
+        "Es prueba diferencial",
+        "Identifica estreptococos"
+      ]
+    },
+    {
+      "name": "Caldo Dextrosa Sabouraud",
+      "description": "Caldo Dextrosa Sabouraud es un medio utilizado para el cultivo de levaduras y hongos. Es un medio líquido utilizado para el cultivo de levaduras, hongos y microorganismos acidúricos. La concentración de dextrosa y el pH ácido hacen que este medio sea selectivo para hongos de muestras clínicas y diversos materiales. Se utiliza para cultivar levaduras y hongos patógenos, en particular los asociados con infecciones de la piel. También es utilizado en pruebas de esterilidad.",
+      "props": [
+        "Es caldo",
+        "Cultiva levaduras",
+        "Cultiva hongos",
+        "Se aplica en muestras clínicas"
+      ]
+    }
+  ]
+}
