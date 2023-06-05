@@ -1,0 +1,21 @@
+name: firebase_app_installations_example
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+
+dependencies:
+  firebase_core: ^2.13.1
+  firebase_app_installations: ^0.2.3+2
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true

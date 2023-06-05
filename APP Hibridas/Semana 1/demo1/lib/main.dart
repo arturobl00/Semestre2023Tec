@@ -27,6 +27,9 @@ class _Demo1State extends State<Demo1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Demo1'),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,11 +38,13 @@ class _Demo1State extends State<Demo1> {
             color: Colors.red,
             width: 245.9,
             height: 243.3,
+            child: Center(child: Text("Cuadro 1")),
           ),
           Container(
             color: Colors.blue,
             width: 245.9,
             height: 243.3,
+            child: Center(child: Text("Cuadro 2")),
           ),
         ],
       ),

@@ -2,12 +2,13 @@ import cv2
 import numpy as np
 import imutils
 
-cam = cv2.VideoCapture('video.mp4')
+faceClassif = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+cam = cv2.VideoCapture(1)
 #Algoritmo de substraccion de fondo
 fgbg = cv2.bgsegm.createBackgroundSubtractorMOG()
 kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
-car_counter = 0
-
+peope_counter = 0
 
 while True:
     ret, frame = cam.read()
@@ -15,14 +16,29 @@ while True:
     frame = imutils.resize(frame, width=800, height=600)
 
      # Especificamos los puntos extremos del área a analizar
-    area_pts = np.array([[330, 16], [frame.shape[1]-80, 16], [frame.shape[1]-80, 445], [330, 445]])
+    #area_pts = np.array([[330, 16], [frame.shape[1]-80, 16], [frame.shape[1]-80, 445], [330, 445]])
+    
+
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    faces = faceClassif.detectMultiScale(gray,
+	scaleFactor=1.1,
+	minNeighbors=5,
+	minSize=(30,30),
+	maxSize=(200,200))
+    
+    
+
+    #Area de Detección de elementos Recuadro
+                        #Punto 1      Punto 2                   Punto 2F                  Punto 1F 
+    area_pts = np.array([[250, 110], [frame.shape[1]-350, 110], [frame.shape[1]-350, 530], [250, 530]])
 
     #Dibujamos el rectangulo y la linea de cruze
-    cv2.drawContours(frame, [area_pts], -1, (255, 0, 255), 2)
-    cv2.line(frame, (450, 16), (450, 445), (0, 255, 255), 1)
+    #cv2.drawContours(frame, [area_pts], -1, (255, 0, 0), 2)
+    #cv2.line(frame, (450, 16), (450, 445), (255, 0, 0), 1)
+    #cv2.line(frame, (50, 16), (50, 445), (255, 0, 0), 1)
 
     if ret == False : break
-
     # Con ayuda de una imagen auxiliar, determinamos el área
     # sobre la cual actuará el detector de movimiento
     imAux = np.zeros(shape=(frame.shape[:2]), dtype=np.uint8)
@@ -43,22 +59,30 @@ while True:
     for cnt in cnts:
         if cv2.contourArea(cnt) > 500:
             x, y, w, h = cv2.boundingRect(cnt)
-            cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,255), 1)
+            #Rectangulos de detección de objetos Rojo
+            cv2.rectangle(frame, (x,y), (x+w,y+h), (0,0,255), 1)
     
             #Dibujar una linea verde cada que el auto pasa en las coordenadas de la linea amarilla
-            if 440 < (x + w) < 460:
-                car_counter = car_counter + 1
-                cv2.line(frame, (450, 16), (450, 445), (0, 255, 0), 3)
+            #if 440 < (x + w) < 460:
+            if 355 < (x + w) < 365:
+                peope_counter = peope_counter + 1
+                cv2.line(frame, (350, 110), (350, 530), (0, 255, 0), 3)
 
     # Visualización del conteo de autos
-    cv2.drawContours(frame, [area_pts], -1, (255, 0, 255), 2)
-    cv2.line(frame, (450, 16), (450, 445), (0, 255, 255), 1)
+    #Recuadro de Detección o Cerca
+    cv2.drawContours(frame, [area_pts], -1, (0, 255, 255), 3)
+    #cv2.line(frame, (450, 16), (450, 445), (0, 255, 255), 1)
+    #Linea Amarilla indicador
+    cv2.line(frame, (350, 110), (350, 530), (0, 255, 255), 1)
     #Rectangulo con el numero de autos
-    cv2.rectangle(frame, (frame.shape[1]-70, 215), (frame.shape[1]-5, 270), (0, 255, 0), 2)
-    cv2.putText(frame, str(car_counter), (frame.shape[1]-55, 250),
-                cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0,255,0), 2)
+    #cv2.rectangle(frame, (frame.shape[1]-200, 215), (frame.shape[1]-100, 270), (0, 255, 0), 2)
+    cv2.putText(frame, "Cruze Objetos", (frame.shape[1]-320, 250),
+                cv2.FONT_HERSHEY_SIMPLEX, 1.2, (200,0,0), 1)
     
-    cv2.imshow('Video Autopista', frame)
+    cv2.putText(frame, str(peope_counter), (frame.shape[1]-200, 300),
+                cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0,255,0), 1)
+    
+    cv2.imshow('Video Puerta', frame)
     #cv2.imshow('Segmento', image_area)
     #cv2.imshow('Segmento2', fgmask)
 

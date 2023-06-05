@@ -1,0 +1,19 @@
+name: firebase_app_check_example
+description: Firebase App Check example application.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+
+dependencies:
+  cloud_firestore: ^4.8.0
+  firebase_app_check: ^0.1.4+2
+  firebase_core: ^2.13.1
+  flutter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
